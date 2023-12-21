@@ -14,10 +14,10 @@ class Population
   public:
     Population(std::string _individu, std::vector<std::string> _ListeDindividu);
     ~Population();
-    Newindividu();
-    Addindividu();
+    NewIndividu();
+    AddIndividu();
     MeilleureIndividu();
-    newpopulation();
+    newPopulation();
 
 }
 
