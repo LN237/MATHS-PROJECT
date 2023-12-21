@@ -28,11 +28,12 @@ Population::Population(std::string individu, std::vector<std::string> ListeDindi
     // il n'y a plus qua faire des pushback dans population
    std::cout<<std::endl;
 
+    
     for(int i = 0; i < 8 ; ++i)
     {
         
-            
         std::cout<<nucleotide[i];
+                                
         ListeDindividu.push_back(new std::string nucleotide[i]);
     }
     
