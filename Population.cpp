@@ -30,6 +30,8 @@ Population::Population(std::string individu, std::vector<std::string> ListeDindi
 
     for(int i = 0; i < 8 ; ++i)
     {
+        
+            
         std::cout<<nucleotide[i];
         ListeDindividu.push_back(new std::string nucleotide[i]);
     }
