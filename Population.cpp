@@ -7,8 +7,16 @@ Population::Population(std::string individu, std::vector<std::string> ListeDindi
 {
 
 //alternative du prof concernant les lettres
+    
+    //ListeDindividu.reserve(MAX_OBJ);
 
+}
 
+Population::~Population()
+{
+}
+
+AddIndividu(){
     std::string Individu("ACGT");
     std::random_device rng;
     std::uniform_int_distribution<> index_dist(0, Individu.size() - 1);
@@ -33,14 +41,9 @@ Population::Population(std::string individu, std::vector<std::string> ListeDindi
     {
         
         std::cout<<nucleotide[i];
+        std::string Individu[i] = nucléotide[i];
                                 
-        ListeDindividu.push_back(new std::string nucleotide[i]);
     }
-    
-    //ListeDindividu.reserve(MAX_OBJ);
-
+    ListeDindividu.push_back(std::string Individu);
 }
 
-Population::~Population()
-{
-}
