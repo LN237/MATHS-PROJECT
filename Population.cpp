@@ -1,39 +1,50 @@
+#include <iostream>
 #include <random>
+#include <string>
 #include "Population.hpp"
 
-Population::newIndividu(){
- struct BinaryIndividual {
-    std::vector<int> genes; 
-     BinaryIndividual(int geneCount) {
-        for (int i = 0; i < geneCount; ++i) {
-            genes.push_back(generateRandomBinary());
-        }
-    }
- };
- std::string generateRandomAllele() {
-    const std::vector<std::string> alleles = {"00", "11", "01", "10"};
-    return alleles[randomIndex(alleles.size())];
-}
-
-}
-
-Population::Population(std::string _individu, std::vector<std::string> _ListeDIndividu)
+Population::Population(std::string individu, std::vector<std::string> ListeDindividu)
 {
-// Fonction pour générer un nombre aléatoire binaire
-int generateRandomBinary() {
-    std::random_device rd;  // Utilisé pour obtenir une seed vraiment aléatoire
-    std::mt19937 gen(rd()); // Mersenne Twister 19937 comme générateur
 
-    std::uniform_int_distribution<> distribution(0, 1);
-    return distribution(gen);
+//alternative du prof concernant les lettres
+    
+    //ListeDindividu.reserve(MAX_OBJ);
+
 }
-
-
-
-   
-}
-
 
 Population::~Population()
 {
 }
+
+AddIndividu(){
+    std::string Individu("ACGT");
+    std::random_device rng;
+    std::uniform_int_distribution<> index_dist(0, Individu.size() - 1);
+    
+    std::string nucleotide;
+ 
+    for(int i = 0; i < 8; ++i) {
+     //   std::string nucleotide = Individu[index_dist(rng)].substr(3,2);
+        
+      //std::cout<<Individu[index_dist(rng)];
+      
+      nucleotide[i] = Individu[index_dist(rng)];
+      std::cout<<nucleotide[i];
+        
+    }
+
+    // il n'y a plus qua faire des pushback dans population
+   std::cout<<std::endl;
+
+    
+    for(int i = 0; i < 8 ; ++i)
+    {
+        
+        std::cout<<nucleotide[i];
+        std::string Individu[i] = nucléotide[i];
+                                
+    }
+    ListeDindividu.push_back(std::string Individu);
+}
+
+

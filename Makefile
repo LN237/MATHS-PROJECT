@@ -24,7 +24,7 @@ LDFLAGS    =
 BUILDIR    = build
 # Source files - All .cpp files required to build the executable
 # Replace the following list (file1.cpp, ...) by your cpp files to compile
-SRC_FILES  = main.cpp Population.cpp
+SRC_FILES  = neofile.cpp
 # Object files - All .o files generated from the source files
 OBJ_FILES  = $(patsubst %.cpp, $(BUILDIR)/%.o, $(SRC_FILES))
 # Executable - The name of the executable into the bin directory
